@@ -10,10 +10,11 @@ export class AppController {
   getHello(): ApiResponse <{
     service : "string"
     version : "string"
-
+  }> } 
     return 
     success: true,
     data : this.appService.getHello();
     message : 'Hello NestJS'
-  >}
+  };
+ }
 }
